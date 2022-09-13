@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/healthArticlesFragment"
+        android:title="Health"
+        android:icon="@drawable/ic_android"/>
+    <item
+        android:id="@+id/organsArticlesFragment"
+        android:title="3D Organs"
+        android:icon="@drawable/ic_android"/>
+    <item
+        android:id="@+id/measureFragment"
+        android:title="Measure"
+        android:icon="@drawable/ic_android"/>
+</menu>

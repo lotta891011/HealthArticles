@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/healthArticlesFragment">
+
+    <fragment
+        android:id="@+id/healthArticlesFragment"
+        android:name="com.example.healtharticles.HealthArticlesFragment"
+        android:label="Health articles"
+        tools:layout="@layout/fragment_health_articles" />
+    <fragment
+        android:id="@+id/organsArticlesFragment"
+        android:name="com.example.healtharticles.OrgansArticlesFragment"
+        android:label="Learn about news in health tech!"
+        tools:layout="@layout/fragment_organs_articles" />
+    <fragment
+        android:id="@+id/measureFragment"
+        android:name="com.example.healtharticles.MeasureFragment"
+        android:label="Measure"
+        tools:layout="@layout/fragment_measure" />
+</navigation>
