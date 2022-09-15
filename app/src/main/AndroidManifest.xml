@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthArticles"
         tools:targetApi="31">
+
         <activity
             android:name=".ArticleActivity"
             android:exported="false" />
