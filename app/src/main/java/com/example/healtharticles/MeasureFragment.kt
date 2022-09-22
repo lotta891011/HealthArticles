@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import com.example.healtharticles.R
+import kotlin.math.roundToInt
+import kotlin.random.Random
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,10 +37,16 @@ class MeasureFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         container?.removeAllViews()
+        val view = inflater.inflate(R.layout.fragment_measure, container, false)
+        view?.findViewById<Button>(R.id.button_measure)?.setOnClickListener{
+            view.findViewById<TextView>(R.id.glucose_measure)?.text= Random.nextInt(from = 60, until = 120 ).toString()
+            view.findViewById<TextView>(R.id.heart_measure)?.text= Random.nextInt(from = 60, until = 100 ).toString()
+            view.findViewById<TextView>(R.id.oxygen_measure)?.text= Random.nextInt(from = 95, until = 100 ).toString()
+        }
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_measure, container, false)
+        return view
     }
 
     companion object {
@@ -58,5 +68,4 @@ class MeasureFragment : Fragment() {
                 }
             }
     }
-    
 }
