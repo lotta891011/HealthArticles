@@ -3,14 +3,14 @@
 
     <item
         android:id="@+id/healthArticlesFragment"
-        android:title="Health"
-        android:icon="@drawable/ic_android"/>
+        android:title="@string/health"
+        android:icon="@drawable/ic_baseline_article_24"/>
     <item
         android:id="@+id/organsArticlesFragment"
-        android:title="3D Organs"
-        android:icon="@drawable/ic_android"/>
+        android:title="@string/_3d_organs"
+        android:icon="@drawable/ic_baseline_cable_24"/>
     <item
         android:id="@+id/measureFragment"
-        android:title="Measure"
-        android:icon="@drawable/ic_android"/>
+        android:title="@string/measure_menu"
+        android:icon="@drawable/ic_baseline_control_point_24"/>
 </menu>
